@@ -4,7 +4,7 @@
 
 ## 工具函数
 
-```
+```golang
 import (
     "github.com/joyant/iptuil"
 )
@@ -36,10 +36,10 @@ iputil.StringIPV42IPV6("192.168.0.999") // "", false
 
 ## 防火墙
 
-```
+```golang
 f := NewFirewall()
 err := f.LoadIP("192.168.0.*")
-err := f.LoadIP("192.168.1-10.1")
+err = f.LoadIP("192.168.1-10.1")
 err = f.LoadIP("a:b:c:e:f:1:2:3")
 err = f.LoadIP("a:b:d:*::")
 
@@ -56,5 +56,5 @@ Apache
 
 ## 参考
 
-关于`IPV4`和`IPV6`概念，请(参考)["https://blog.csdn.net/Listen2You/article/details/98784656"]
+关于`IPV4`和`IPV6`概念，请[参考](https://blog.csdn.net/Listen2You/article/details/98784656)
 
